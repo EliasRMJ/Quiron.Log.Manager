@@ -10,7 +10,7 @@ namespace Quiron.Log.Manager
         [GeneratedRegex(@"\] (.*?) -")]
         private static partial Regex RegexEvent();
 
-        public async Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end, string text = "", string folder = "Logs")
+        public async Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end, string? text = "", string folder = "Logs")
         {
             var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), folder);
             IEnumerable<string> allLines = [];
@@ -43,7 +43,7 @@ namespace Quiron.Log.Manager
                 var events = RegexEvent().Matches(allLines.ElementAt(i))[0].Value.Split('|');
                 viewLogViewModels[i].EventCode = events[0].Replace("] -", string.Empty).Trim();
                 viewLogViewModels[i].EventName = events[1].Replace("-", string.Empty).Trim();
-                viewLogViewModels[i].UserName = events[2].Replace("-", string.Empty).Trim();
+                viewLogViewModels[i].UserName = events.Length.Equals(3) ? events[2].Replace("-", string.Empty).Trim() : string.Empty;
             }
 
             return [.. viewLogViewModels.OrderByDescending(order => order.Date)];

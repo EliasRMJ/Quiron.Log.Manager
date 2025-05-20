@@ -361,7 +361,7 @@
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.1",
     "restore": {
       "projectUniqueName": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
       "projectName": "Quiron.Log.Manager",
