@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>true</IsPackable>
+    <Title>Quiron.Log.Manager</Title>
+    <Description>Package created to customize the server's default log manager (ILogger), as well as providing an interface to format the log text into a JSON list.</Description>
+    <Copyright>MIT</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>quiron-package.png</PackageIcon>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
+    <PackageReleaseNotes>Create package.</PackageReleaseNotes>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <ApplicationIcon>quiron-package.ico</ApplicationIcon>
+    <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
+    <Authors>EliasRMJ</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="quiron-package.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="quiron-package.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

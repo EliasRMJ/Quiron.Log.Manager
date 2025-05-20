@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# IDE0022: Usar o corpo do bloco para método
+dotnet_diagnostic.IDE0022.severity = none
+
+# CS8767: A nulidade de tipos de referência no tipo de parâmetro não corresponde ao membro implementado implicitamente (possivelmente devido a atributos de nulidade).
+dotnet_diagnostic.CS8767.severity = none
+
+# CS8633: A anulabilidade em restrições para parâmetro de tipo não corresponde às restrições para parâmetro de tipo em método de interface implicitamente implementado.
+dotnet_diagnostic.CS8633.severity = none
