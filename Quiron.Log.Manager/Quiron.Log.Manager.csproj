@@ -12,11 +12,11 @@
     <PackageIcon>quiron-package.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
-    <PackageReleaseNotes>Create package.</PackageReleaseNotes>
+    <PackageReleaseNotes>Bug fix.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.0.1</Version>
-    <AssemblyVersion>1.0.1.1</AssemblyVersion>
-    <FileVersion>1.0.1.1</FileVersion>
+    <Version>1.1.9</Version>
+    <AssemblyVersion>1.1.9.1</AssemblyVersion>
+    <FileVersion>1.1.9.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>

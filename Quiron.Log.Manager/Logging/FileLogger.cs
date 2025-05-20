@@ -2,7 +2,7 @@
 
 namespace Quiron.Log.Manager.Logging
 {
-    public class FileLogger(string logSys, string userName) : ILogger
+    public class FileLogger(string logSys, string userName = "Logs") : ILogger
     {
         private static readonly Lock _lock = new();
 
