@@ -10,9 +10,9 @@ namespace Quiron.Log.Manager
         [GeneratedRegex(@"\] (.*?) -")]
         private static partial Regex RegexEvent();
 
-        public async Task<ViewLogViewModel[]> Get(DateOnly begin, DateOnly end, string text = "", string Folder = "Logs")
+        public async Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end, string text = "", string folder = "Logs")
         {
-            var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), Folder);
+            var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), folder);
             IEnumerable<string> allLines = [];
 
             while (begin <= end)

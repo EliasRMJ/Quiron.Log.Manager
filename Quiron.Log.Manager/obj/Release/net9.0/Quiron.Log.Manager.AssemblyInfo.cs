@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Package created to customize the server\'s default log manager (ILogger), as well " +
     "as providing an interface to format the log text into a JSON list.")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+586a1a3d350faa565a68817ba23654835e8ee719")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7784e0fb33f1be313ff17b9500e105c0693820b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quiron.Log.Manager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quiron.Log.Manager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.1")]

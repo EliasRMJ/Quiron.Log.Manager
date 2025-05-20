@@ -2,6 +2,6 @@
 {
     public interface IViewLog
     {
-        Task<ViewLogViewModel[]> Get(DateOnly begin, DateOnly end, string text = "", string Folder = "Logs");
+        Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end, string text = "", string folder = "Logs");
     }
 }
