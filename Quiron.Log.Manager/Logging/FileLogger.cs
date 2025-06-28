@@ -10,28 +10,12 @@ namespace Quiron.Log.Manager.Logging
 
         public bool IsEnabled(LogLevel logLevel) => true;
 
-        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception exception
-            , Func<TState, Exception, string> formatter)
+        public void Log<TState>(LogLevel logLevel, EventId eventId, TState state, Exception? exception
+            , Func<TState, Exception?, string> formatter)
         {
             if (!IsEnabled(logLevel)) return;
 
             var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventId.Name}|{userName} - {formatter(state, exception)}{Environment.NewLine}";
-            this.CreateLogDirectory(logMessage);
-        }
-
-        public void Log(LogLevel logLevel, EventId eventId, string message)
-        {
-            if (!IsEnabled(logLevel)) return;
-
-            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventId.Name}|{userName} - {message}{Environment.NewLine}";
-            this.CreateLogDirectory(logMessage);
-        }
-
-        public void Log(LogLevel logLevel, string message)
-        {
-            if (!IsEnabled(logLevel)) return;
-
-            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {0}| |{userName} - {message}{Environment.NewLine}";
             this.CreateLogDirectory(logMessage);
         }
 

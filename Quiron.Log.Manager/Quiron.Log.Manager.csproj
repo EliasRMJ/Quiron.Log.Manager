@@ -14,9 +14,9 @@
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
     <PackageReleaseNotes>Bug fix.</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.1.9</Version>
-    <AssemblyVersion>1.1.9.1</AssemblyVersion>
-    <FileVersion>1.1.9.1</FileVersion>
+    <Version>1.2.5</Version>
+    <AssemblyVersion>1.2.5.1</AssemblyVersion>
+    <FileVersion>1.5.5.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>

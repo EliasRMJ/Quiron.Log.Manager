@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|c:\\meus projetos gui\\sgs v_w\\quiron.log.manager\\quiron.log.manager\\quiron.log.manager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|solutionrelative:quiron.log.manager\\quiron.log.manager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|c:\\meus projetos gui\\sgs v_w\\quiron.log.manager\\quiron.log.manager\\logging\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|solutionrelative:quiron.log.manager\\logging\\filelogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|c:\\meus projetos gui\\sgs v_w\\quiron.log.manager\\quiron.log.manager\\logging\\fileloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|solutionrelative:quiron.log.manager\\logging\\fileloggerprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|c:\\meus projetos gui\\sgs v_w\\quiron.log.manager\\quiron.log.manager\\viewlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1C2C5466-00D0-4631-8365-AF6117BF6C3E}|Quiron.Log.Manager\\Quiron.Log.Manager.csproj|solutionrelative:quiron.log.manager\\viewlog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -51,15 +63,52 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Quiron.Log.Manager",
+              "DocumentMoniker": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
+              "RelativeDocumentMoniker": "Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
+              "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
+              "RelativeToolTip": "Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-28T11:50:09.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileLogger.cs",
+              "DocumentMoniker": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLogger.cs",
+              "RelativeDocumentMoniker": "Quiron.Log.Manager\\Logging\\FileLogger.cs",
+              "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLogger.cs",
+              "RelativeToolTip": "Quiron.Log.Manager\\Logging\\FileLogger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:54:51.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileLoggerProvider.cs",
+              "DocumentMoniker": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
+              "RelativeDocumentMoniker": "Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
+              "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
+              "RelativeToolTip": "Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T12:54:47.331Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ViewLog.cs",
               "DocumentMoniker": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\ViewLog.cs",
               "RelativeDocumentMoniker": "Quiron.Log.Manager\\ViewLog.cs",
               "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\ViewLog.cs",
               "RelativeToolTip": "Quiron.Log.Manager\\ViewLog.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T07:37:32.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-20T07:37:32.549Z"
             }
           ]
         }
