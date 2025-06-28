@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using System.Text;
 
 namespace Quiron.Log.Manager.Logging
 {
@@ -29,7 +30,7 @@ namespace Quiron.Log.Manager.Logging
 
             lock (_lock)
             {
-                File.AppendAllText(logFilePath, logMessage);
+                File.AppendAllText(logFilePath, logMessage, new UTF8Encoding(encoderShouldEmitUTF8Identifier: true));
             }
         }
     }

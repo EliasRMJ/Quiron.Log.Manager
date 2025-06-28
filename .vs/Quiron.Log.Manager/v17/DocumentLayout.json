@@ -68,7 +68,7 @@
               "RelativeDocumentMoniker": "Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
               "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
               "RelativeToolTip": "Quiron.Log.Manager\\Quiron.Log.Manager.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-06-28T11:50:09.16Z",
               "EditorCaption": ""
@@ -81,7 +81,7 @@
               "RelativeDocumentMoniker": "Quiron.Log.Manager\\Logging\\FileLogger.cs",
               "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLogger.cs",
               "RelativeToolTip": "Quiron.Log.Manager\\Logging\\FileLogger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABcAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACAAAABsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-13T12:54:51.223Z",
               "EditorCaption": ""
@@ -94,9 +94,10 @@
               "RelativeDocumentMoniker": "Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
               "ToolTip": "C:\\Meus Projetos GUI\\SGS V_W\\Quiron.Log.Manager\\Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
               "RelativeToolTip": "Quiron.Log.Manager\\Logging\\FileLoggerProvider.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T12:54:47.331Z"
+              "WhenOpened": "2025-06-13T12:54:47.331Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
