@@ -16,7 +16,7 @@
     <NeutralLanguage>en</NeutralLanguage>
     <Version>1.2.5</Version>
     <AssemblyVersion>1.2.5.1</AssemblyVersion>
-    <FileVersion>1.5.5.1</FileVersion>
+    <FileVersion>1.2.5.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
