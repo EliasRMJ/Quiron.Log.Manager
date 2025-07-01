@@ -14,9 +14,9 @@
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
     <PackageReleaseNotes>Bug fix. [new UTF8Encoding(encoderShouldEmitUTF8Identifier: true)] </PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.2.6</Version>
-    <AssemblyVersion>1.2.6.1</AssemblyVersion>
-    <FileVersion>1.2.6.1</FileVersion>
+    <Version>1.2.7</Version>
+    <AssemblyVersion>1.2.7.1</AssemblyVersion>
+    <FileVersion>1.2.7.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
