@@ -14,12 +14,13 @@ namespace Quiron.Log.Manager
         [GeneratedRegex(@"^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}")]
         private static partial Regex DateRegex();
 
-        public async Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end
+        public async Task<HeaderLogViewModel> GetAsync(DateOnly begin, DateOnly end
             , string? text = "", string? eventName = "", string? type = ""
             , string folder = "logs", int pageNumber = -1, int pageSize = -1)
         {
             var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), folder);
             IEnumerable<string> allLines = [];
+            ViewLogViewModel[] logs = [];
 
             while (begin <= end)
             {
@@ -69,7 +70,22 @@ namespace Quiron.Log.Manager
 
             var listNow = viewLogViewModels.OrderByDescending(order => order.Date);
 
-            return pageNumber > 0 ? [.. listNow.Skip((pageNumber - 1) * pageSize).Take(pageSize)] : [.. listNow];
+            logs = pageNumber > 0 ? [.. listNow.Skip((pageNumber - 1) * pageSize).Take(pageSize)] : [.. listNow];
+
+            var headerLogViewModel = new HeaderLogViewModel
+            {
+                TotalCount = logs.Length,
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                ErrorCount = logs.Count(log => log.Type.Equals("Error", StringComparison.OrdinalIgnoreCase)),
+                CriticalCount = logs.Count(log => log.Type.Equals("Critical", StringComparison.OrdinalIgnoreCase)),
+                WarningCount = logs.Count(log => log.Type.Equals("Warning", StringComparison.OrdinalIgnoreCase)),
+                InformationCount = logs.Count(log => log.Type.Equals("Information", StringComparison.OrdinalIgnoreCase)),
+                UserCount = logs.GroupBy(group => group.UserName).Count(),
+                Logs = logs
+            };
+
+            return headerLogViewModel;
         }
 
         static List<string> ExtractLogEntries(string[] lines)

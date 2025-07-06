@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Quiron.Log.Manager</id>
+    <version>1.2.8</version>
+    <title>Quiron.Log.Manager</title>
+    <authors>EliasRMJ</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>quiron-package.png</icon>
+    <readme>README.md</readme>
+    <description>Package created to customize the server's default log manager (ILogger), as well as providing an interface to format the log text into a JSON list.</description>
+    <releaseNotes>Create into paginate in log</releaseNotes>
+    <copyright>MIT</copyright>
+    <tags>quiron,net,data,extensions,entityframework,core,asp.net</tags>
+    <repository type="git" commit="9e73aad73cfef04ec205cfc9d2a3759f75de3c17" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Extensions.Logging" version="9.0.5" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <contentFiles>
+      <files include="any/net9.0/quiron-package.ico" buildAction="Content" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="C:\Meus Projetos GUI\SGS V_W\Quiron.Log.Manager\Quiron.Log.Manager\bin\Release\net9.0\Quiron.Log.Manager.dll" target="lib\net9.0\Quiron.Log.Manager.dll" />
+    <file src="C:\Meus Projetos GUI\SGS V_W\Quiron.Log.Manager\Quiron.Log.Manager\quiron-package.ico" target="content\quiron-package.ico" />
+    <file src="C:\Meus Projetos GUI\SGS V_W\Quiron.Log.Manager\Quiron.Log.Manager\quiron-package.ico" target="contentFiles\any\net9.0\quiron-package.ico" />
+    <file src="C:\Meus Projetos GUI\SGS V_W\Quiron.Log.Manager\Quiron.Log.Manager\quiron-package.png" target="\quiron-package.png" />
+    <file src="C:\Meus Projetos GUI\SGS V_W\Quiron.Log.Manager\README.md" target="\README.md" />
+  </files>
+</package>
