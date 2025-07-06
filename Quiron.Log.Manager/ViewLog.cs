@@ -15,7 +15,8 @@ namespace Quiron.Log.Manager
         private static partial Regex DateRegex();
 
         public async Task<ViewLogViewModel[]> GetAsync(DateOnly begin, DateOnly end
-            , string? text = "", string? eventName = "", string? type = "", string folder = "Logs")
+            , string? text = "", string? eventName = "", string? type = ""
+            , string folder = "logs", int pageNumber = -1, int pageSize = -1)
         {
             var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), folder);
             IEnumerable<string> allLines = [];
@@ -66,7 +67,9 @@ namespace Quiron.Log.Manager
             if (!string.IsNullOrWhiteSpace(type))
                 viewLogViewModels = [.. viewLogViewModels.Where(vm => vm.Type.Equals(type, StringComparison.OrdinalIgnoreCase))];
 
-            return [.. viewLogViewModels.OrderByDescending(order => order.Date)];
+            var listNow = viewLogViewModels.OrderByDescending(order => order.Date);
+
+            return pageNumber > 0 ? [.. listNow.Skip((pageNumber - 1) * pageSize).Take(pageSize)] : [.. listNow];
         }
 
         static List<string> ExtractLogEntries(string[] lines)
