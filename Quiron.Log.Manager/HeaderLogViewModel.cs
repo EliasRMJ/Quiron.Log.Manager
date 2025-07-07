@@ -3,8 +3,6 @@
     public struct HeaderLogViewModel
     {
         public int TotalCount { get; set; }
-        public int PageNumber { get; set; }
-        public int PageSize { get; set; }
         public int ErrorCount { get; set; }
         public int CriticalCount { get; set; }
         public int WarningCount { get; set; }

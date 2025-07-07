@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Quiron.Log.Manager.Logging
 {
-    public class FileLogger(string logSys, string userName = "Logs") : ILogger
+    public class FileLogger(string logSys, string userName = "system") : ILogger
     {
         private static readonly Lock _lock = new();
 
@@ -16,7 +16,17 @@ namespace Quiron.Log.Manager.Logging
         {
             if (!IsEnabled(logLevel)) return;
 
-            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventId.Name}|{userName} - {formatter(state, exception)}{Environment.NewLine}";
+            var userLog = userName;
+            var eventName = eventId.Name;
+            if (!string.IsNullOrWhiteSpace(eventName))
+            {
+                var eventInfo = eventName.Split('#');
+                eventName = eventInfo[0];
+                if (eventInfo.Length > 1)
+                    userLog = $"#{eventInfo[1]}";
+            }
+
+            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventName}|{userLog} - {formatter(state, exception)}{Environment.NewLine}";
             this.CreateLogDirectory(logMessage);
         }
 
