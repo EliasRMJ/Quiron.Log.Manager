@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v9.0": {
-      "Quiron.Log.Manager/1.2.10": {
+      "Quiron.Log.Manager/1.2.11": {
         "dependencies": {
           "Microsoft.Extensions.Logging": "9.0.5"
         },
@@ -80,7 +80,7 @@
     }
   },
   "libraries": {
-    "Quiron.Log.Manager/1.2.10": {
+    "Quiron.Log.Manager/1.2.11": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

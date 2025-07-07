@@ -23,7 +23,7 @@ namespace Quiron.Log.Manager.Logging
                 var eventInfo = eventName.Split('#');
                 eventName = eventInfo[0];
                 if (eventInfo.Length > 1)
-                    userLog = $"#{eventInfo[1]}";
+                    userLog = $"{eventInfo[1]}";
             }
 
             var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventName}|{userLog} - {formatter(state, exception)}{Environment.NewLine}";
