@@ -1,7 +1,11 @@
-﻿namespace Quiron.Log.Manager
+﻿using System.Text.Json.Serialization;
+
+namespace Quiron.Log.Manager
 {
     public struct HeaderLogViewModel
     {
+        [JsonIgnore()]
+        public int TotalCount { get; set; }
         public int ErrorCount { get; set; }
         public int CriticalCount { get; set; }
         public int WarningCount { get; set; }

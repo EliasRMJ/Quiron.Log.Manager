@@ -16,11 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("MIT")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Package created to customize the server\'s default log manager (ILogger), as well " +
     "as providing an interface to format the log text into a JSON list.")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.2.11.1")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.2.11+3ba150d4a3fba33656f570dbb389d785042ee161")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.2.12.1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.2.12+7b63ff917e4ea543b51881ea26303775ede29624")]
 [assembly: System.Reflection.AssemblyProductAttribute("Quiron.Log.Manager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Quiron.Log.Manager")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.2.11.1")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.2.12.1")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 
 // Gerado pela classe WriteCodeFragment do MSBuild.

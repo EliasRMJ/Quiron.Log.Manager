@@ -72,6 +72,7 @@ namespace Quiron.Log.Manager
 
             var headerLogViewModel = new HeaderLogViewModel
             {
+                TotalCount = viewLogViewModels.Length,
                 ErrorCount = logs.Count(log => log.Type.Equals("Error", StringComparison.OrdinalIgnoreCase)),
                 CriticalCount = logs.Count(log => log.Type.Equals("Critical", StringComparison.OrdinalIgnoreCase)),
                 WarningCount = logs.Count(log => log.Type.Equals("Warning", StringComparison.OrdinalIgnoreCase)),
