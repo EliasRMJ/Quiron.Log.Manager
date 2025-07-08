@@ -14,9 +14,9 @@
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
     <PackageReleaseNotes>Change return struct more informations</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.2.12</Version>
-    <AssemblyVersion>1.2.12.1</AssemblyVersion>
-    <FileVersion>1.2.12.1</FileVersion>
+    <Version>1.2.13</Version>
+    <AssemblyVersion>1.2.13.1</AssemblyVersion>
+    <FileVersion>1.2.13.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>

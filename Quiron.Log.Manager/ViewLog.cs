@@ -73,11 +73,11 @@ namespace Quiron.Log.Manager
             var headerLogViewModel = new HeaderLogViewModel
             {
                 TotalCount = viewLogViewModels.Length,
-                ErrorCount = logs.Count(log => log.Type.Equals("Error", StringComparison.OrdinalIgnoreCase)),
-                CriticalCount = logs.Count(log => log.Type.Equals("Critical", StringComparison.OrdinalIgnoreCase)),
-                WarningCount = logs.Count(log => log.Type.Equals("Warning", StringComparison.OrdinalIgnoreCase)),
-                InformationCount = logs.Count(log => log.Type.Equals("Information", StringComparison.OrdinalIgnoreCase)),
-                UserCount = logs.GroupBy(group => group.UserName).Count(),
+                ErrorCount = viewLogViewModels.Count(log => log.Type.Equals("Error", StringComparison.OrdinalIgnoreCase)),
+                CriticalCount = viewLogViewModels.Count(log => log.Type.Equals("Critical", StringComparison.OrdinalIgnoreCase)),
+                WarningCount = viewLogViewModels.Count(log => log.Type.Equals("Warning", StringComparison.OrdinalIgnoreCase)),
+                InformationCount = viewLogViewModels.Count(log => log.Type.Equals("Information", StringComparison.OrdinalIgnoreCase)),
+                UserCount = viewLogViewModels.GroupBy(group => group.UserName).Count(),
                 Logs = [.. logs.OrderByDescending(order => order.Index)]
             };
 
