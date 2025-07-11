@@ -2,7 +2,8 @@
 
 namespace Quiron.Log.Manager.Logging
 {
-    public class FileLoggerProvider(string logSys = "Logs", string userName = "System") : ILoggerProvider
+    public class FileLoggerProvider(string logSys = "logs", string userName = "System") 
+        : ILoggerProvider
     {
         public ILogger CreateLogger(string categoryName)
         {

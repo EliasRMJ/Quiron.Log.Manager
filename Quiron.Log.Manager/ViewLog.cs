@@ -18,7 +18,10 @@ namespace Quiron.Log.Manager
             , string? text = "", string? eventName = "", string? type = ""
             , string folder = "logs", int pageNumber = -1, int pageSize = -1)
         {
-            var logDirectory = Path.Combine(Directory.GetCurrentDirectory(), folder);
+            var currentDirectory = Directory.GetCurrentDirectory();
+            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+            var logDirectory = Path.Combine(parentDirectory, folder);
+
             IEnumerable<string> allLines = [];
             ViewLogViewModel[] logs = [];
 
@@ -87,8 +90,8 @@ namespace Quiron.Log.Manager
         static List<string> ExtractLogEntries(string[] lines)
         {
             var result = new List<string>();
-            var regex = DateRegex();
             var builder = new StringBuilder();
+            var regex = DateRegex();
 
             foreach (var line in lines)
             {
