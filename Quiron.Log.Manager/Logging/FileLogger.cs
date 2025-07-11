@@ -33,8 +33,7 @@ namespace Quiron.Log.Manager.Logging
         private void CreateLogDirectory(string logMessage)
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
-            var logDirectory = Path.Combine(parentDirectory, logSys);
+            var logDirectory = Path.Combine(currentDirectory, logSys);
             var logFilePath = Path.Combine(logDirectory, $"log-{DateTime.Now:yyyy-MM-dd}.txt");
 
             Directory.CreateDirectory(logDirectory);

@@ -21,8 +21,7 @@ namespace Quiron.Log.Manager.Logging
         private void CleanupOldLogs()
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
-            var logDirectory = Path.Combine(parentDirectory, logSys);
+            var logDirectory = Path.Combine(currentDirectory, logSys);
 
             if (Directory.Exists(logDirectory))
             {

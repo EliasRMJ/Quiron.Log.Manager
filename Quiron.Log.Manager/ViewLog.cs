@@ -19,8 +19,7 @@ namespace Quiron.Log.Manager
             , string folder = "logs", int pageNumber = -1, int pageSize = -1)
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
-            var logDirectory = Path.Combine(parentDirectory, folder);
+            var logDirectory = Path.Combine(currentDirectory, folder);
 
             IEnumerable<string> allLines = [];
             ViewLogViewModel[] logs = [];
