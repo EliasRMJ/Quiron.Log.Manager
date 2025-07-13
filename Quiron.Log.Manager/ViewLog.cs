@@ -63,6 +63,7 @@ namespace Quiron.Log.Manager
                     viewLogViewModels[i].EventCode = events[0].Replace("] -", string.Empty).Trim();
                     viewLogViewModels[i].EventName = events[1].Replace("-", string.Empty).Trim();
                     viewLogViewModels[i].UserName = events.Length.Equals(3) ? events[2].Replace("-", string.Empty).Trim() : string.Empty;
+                    viewLogViewModels[i].Method = events.Length.Equals(4) ? events[3].Replace("-", string.Empty).Trim() : string.Empty;
                 }
                 catch { continue; }
             }

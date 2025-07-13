@@ -8,5 +8,6 @@
         , string EventCode = ""
         , string EventName = ""
         , string UserName= ""
+        , string Method = ""
      );
 }

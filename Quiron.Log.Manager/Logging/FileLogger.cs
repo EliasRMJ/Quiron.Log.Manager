@@ -18,15 +18,18 @@ namespace Quiron.Log.Manager.Logging
 
             var userLog = userName;
             var eventName = eventId.Name;
+            var methodName = string.Empty;
             if (!string.IsNullOrWhiteSpace(eventName))
             {
                 var eventInfo = eventName.Split('#');
                 eventName = eventInfo[0];
                 if (eventInfo.Length > 1)
                     userLog = $"{eventInfo[1]}";
+                if (eventInfo.Length > 2)
+                    methodName = $"{eventInfo[2]}";
             }
 
-            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventName}|{userLog} - {formatter(state, exception)}{Environment.NewLine}";
+            var logMessage = $"{DateTime.Now:yyyy-MM-dd HH:mm:ss} [{logLevel}] - {eventId.Id}|{eventName}|{userLog}|{methodName} - {formatter(state, exception)}{Environment.NewLine}";
             this.CreateLogDirectory(logMessage);
         }
 
