@@ -17,11 +17,11 @@ namespace Quiron.Log.Manager.Logging
             if (!IsEnabled(logLevel)) return;
 
             var userLog = userName;
-            var eventName = eventId.Name;
-            var methodName = string.Empty;
-            if (!string.IsNullOrWhiteSpace(eventName))
+            var eventName = eventId.Name ?? "no-event";
+            var methodName = "GET";
+            if (!string.IsNullOrWhiteSpace(eventId.Name))
             {
-                var eventInfo = eventName.Split('#');
+                var eventInfo = eventId.Name.Split('#');
                 eventName = eventInfo[0];
                 if (eventInfo.Length > 1)
                     userLog = $"{eventInfo[1]}";
