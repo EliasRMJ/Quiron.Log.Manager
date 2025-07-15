@@ -14,7 +14,7 @@
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
     <PackageReleaseNotes>Creating a control for deleting old files</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.3.04-rc</Version>
+    <Version>1.3.04</Version>
     <AssemblyVersion>1.3.04.1</AssemblyVersion>
     <FileVersion>1.3.04.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>

@@ -69,9 +69,13 @@ namespace Quiron.Log.Manager
             }
 
             if (!string.IsNullOrWhiteSpace(type))
-                viewLogViewModels = [.. viewLogViewModels.Where(vm => vm.Type.Equals(type, StringComparison.OrdinalIgnoreCase))];
+                viewLogViewModels = [.. viewLogViewModels
+                    .Where(vm => vm.Type.Equals(type, StringComparison.OrdinalIgnoreCase))
+                    .OrderByDescending(order => order.Date)];
 
-            logs = pageNumber > 0 ? [.. viewLogViewModels.Skip((pageNumber - 1) * pageSize).Take(pageSize)] : [.. viewLogViewModels];
+            logs = pageNumber > 0 ? 
+                [.. viewLogViewModels.OrderByDescending(order => order.Date).Skip((pageNumber - 1) * pageSize).Take(pageSize)] 
+              : [.. viewLogViewModels.OrderByDescending(order => order.Date)];
 
             var headerLogViewModel = new HeaderLogViewModel
             {
@@ -81,7 +85,7 @@ namespace Quiron.Log.Manager
                 WarningCount = viewLogViewModels.Count(log => log.Type.Equals("Warning", StringComparison.OrdinalIgnoreCase)),
                 InformationCount = viewLogViewModels.Count(log => log.Type.Equals("Information", StringComparison.OrdinalIgnoreCase)),
                 UserCount = viewLogViewModels.GroupBy(group => group.UserName).Count(),
-                Logs = [.. logs.OrderByDescending(order => order.Index)]
+                Logs = [.. logs.OrderByDescending(order => order.Date)]
             };
 
             return headerLogViewModel;
