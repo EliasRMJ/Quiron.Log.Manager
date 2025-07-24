@@ -12,11 +12,11 @@
     <PackageIcon>quiron-package.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <PackageTags>quiron,net,data,extensions,entityframework,core,asp.net</PackageTags>
-    <PackageReleaseNotes>Creating a control for deleting old files</PackageReleaseNotes>
+    <PackageReleaseNotes>[Bugfix] Create new parameter 'isParent' for creation local file</PackageReleaseNotes>
     <NeutralLanguage>en</NeutralLanguage>
-    <Version>1.3.04</Version>
-    <AssemblyVersion>1.3.04.1</AssemblyVersion>
-    <FileVersion>1.3.04.1</FileVersion>
+    <Version>1.3.05</Version>
+    <AssemblyVersion>1.3.05.1</AssemblyVersion>
+    <FileVersion>1.3.05.1</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <ApplicationIcon>quiron-package.ico</ApplicationIcon>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>

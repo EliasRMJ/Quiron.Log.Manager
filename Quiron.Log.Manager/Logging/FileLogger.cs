@@ -3,7 +3,7 @@ using System.Text;
 
 namespace Quiron.Log.Manager.Logging
 {
-    public class FileLogger(string logSys, string userName = "system") : ILogger
+    public class FileLogger(string logSys, bool isParent = false, string userName = "system") : ILogger
     {
         private static readonly Lock _lock = new();
 
@@ -36,7 +36,8 @@ namespace Quiron.Log.Manager.Logging
         private void CreateLogDirectory(string logMessage)
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var logDirectory = Path.Combine(currentDirectory, logSys);
+            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+            var logDirectory = isParent ? Path.Combine(parentDirectory, logSys) : Path.Combine(currentDirectory, logSys);
             var logFilePath = Path.Combine(logDirectory, $"log-{DateTime.Now:yyyy-MM-dd}.txt");
 
             Directory.CreateDirectory(logDirectory);
