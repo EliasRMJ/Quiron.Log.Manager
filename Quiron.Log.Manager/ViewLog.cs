@@ -16,11 +16,12 @@ namespace Quiron.Log.Manager
 
         public async Task<HeaderLogViewModel> GetAsync(DateOnly begin, DateOnly end
             , string? text = "", string? eventName = "", string? type = ""
-            , string folder = "logs", int pageNumber = -1, int pageSize = -1)
+            , string folder = "logs", int pageNumber = -1, int pageSize = -1, bool isParent = false)
         {
             var currentDirectory = Directory.GetCurrentDirectory();
-            var logDirectory = Path.Combine(currentDirectory, folder);
-
+            var parentDirectory = Directory.GetParent(currentDirectory)!.FullName;
+            var logDirectory = isParent ? Path.Combine(parentDirectory, folder) : Path.Combine(currentDirectory, folder);
+          
             IEnumerable<string> allLines = [];
             ViewLogViewModel[] logs = [];
 
